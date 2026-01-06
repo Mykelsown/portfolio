@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./input.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" src="./modules/main.js"></script>
+    <script type="module" defer src="./modules/index.js"></script>
     <title>Document</title>
   </head>
   <body class="overflow-x-hidden">
     <!-- Navigation -->
     <nav
-      class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" data-aos="fade-down"
+      class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+      data-aos="fade-down"
     >
       <div class="flex flex-col mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
@@ -126,10 +127,89 @@
               </g>
             </svg>
           </button>
+          <button
+            class="hidden md:hidden text-gray-700"
+            id="menu-btn-second"
+            data-aos="fade-right"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="25"
+              height="25"
+              viewBox="0 0 256 256"
+              xml:space="preserve"
+            >
+              <g
+                style="
+                  stroke: none;
+                  stroke-width: 0;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: none;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 86 21.571 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 21.571 86 21.571 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M 86 76.429 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 76.429 86 76.429 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </button>
         </div>
 
         <!-- Mobile Navbar -->
-        <nav class="bg-white border-b border-gray-200 w-full z-50">
+        <nav class="relative bg-white border-b border-gray-200 w-full z-50">
           <!-- Mobile Dropdown -->
           <div
             id="mobile-menu"
@@ -154,858 +234,869 @@
                 View Projects
               </a>
             </div>
+            <div class=""></div>
           </div>
         </nav>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="min-h-screen flex items-center gradient-bg tech-pattern relative overflow-hidden"
-    >
-      <div class="absolute inset-0 bg-black/20"></div>
-      <div class="max-w-7xl mx-auto pt-20 px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="text-white" data-aos="fade-right">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Hi, I'm <span class="text-cyan-300">Micheal Samuel</span>
-            </h1>
-            <p class="text-xl sm:text-2xl mb-8 text-gray-200">
-              Front-End Web Developer passionate about crafting clean and
-              interactive digital experiences.
+    <div id="content-ex-head" class="overflow-x-hidden">
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="min-h-screen flex items-center gradient-bg tech-pattern relative overflow-hidden"
+      >
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-7xl mx-auto pt-20 px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white" data-aos="fade-right">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                Hi, I'm <span class="text-cyan-300">Micheal Samuel</span>
+              </h1>
+              <p class="text-xl sm:text-2xl mb-8 text-gray-200">
+                Front-End Web Developer passionate about crafting clean and
+                interactive digital experiences.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#projects"
+                  class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="#contact"
+                  class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-center"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex justify-center lg:justify-end"
+              data-aos="fade-left"
+            >
+              <div class="relative">
+                <div
+                  class="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-2"
+                >
+                  <img
+                    src="./assets/imgs/micheals-photo.jpg"
+                    alt="Micheal Samuel"
+                    class="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+                <div
+                  class="absolute -top-4 -right-4 w-20 h-20 bg-cyan-400 rounded-full animate-pulse"
+                ></div>
+                <div
+                  class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-400 rounded-full animate-bounce"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              I'm a passionate front-end developer with a unique background in
+              Mechatronics Engineering, bringing both technical precision and
+              creative problem-solving to web development.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#projects"
-                class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-center"
-              >
-                Contact Me
-              </a>
-            </div>
           </div>
-          <div class="flex justify-center lg:justify-end" data-aos="fade-left">
-            <div class="relative">
-              <div
-                class="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-2"
-              >
-                <img
-                  src="./assets/imgs/micheals-photo.jpg"
-                  alt="Micheal Samuel"
-                  class="w-full h-full rounded-full object-cover"
-                />
-              </div>
-              <div
-                class="absolute -top-4 -right-4 w-20 h-20 bg-cyan-400 rounded-full animate-pulse"
-              ></div>
-              <div
-                class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-400 rounded-full animate-bounce"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm a passionate front-end developer with a unique background in
-            Mechatronics Engineering, bringing both technical precision and
-            creative problem-solving to web development.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
-              alt="Developer workspace"
-              class="rounded-lg shadow-xl"
-            />
-          </div>
-          <div data-aos="fade-left">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">My Journey</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              With a National Diploma in Mechatronics Engineering from LASPOTECH
-              and one year of hands-on front-end development experience, I
-              combine analytical thinking with creative design to build
-              exceptional web experiences.
-            </p>
-            <div class="mb-8">
-              <a
-                href="#"
-                class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors md:text-2xl"
-              >
-                <i class="fas fa-download mr-2"></i>
-                Download Resume
-              </a>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
+                alt="Developer workspace"
+                class="rounded-lg shadow-xl"
+              />
             </div>
-          </div>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="mt-20">
-          <h3
-            class="text-3xl font-bold text-center text-gray-800 mb-12"
-            data-aos="fade-up"
-          >
-            Technical Skills
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
-              <div
-                class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
+            <div data-aos="fade-left">
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">My Journey</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                With a National Diploma in Mechatronics Engineering from
+                LASPOTECH and one year of hands-on front-end development
+                experience, I combine analytical thinking with creative design
+                to build exceptional web experiences.
+              </p>
+              <div class="mb-8">
+                <a
+                  href="#"
+                  class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors md:text-2xl"
                 >
-                  <g
-                    style="
-                      stroke: none;
-                      stroke-width: 0;
-                      stroke-dasharray: none;
-                      stroke-linecap: butt;
-                      stroke-linejoin: miter;
-                      stroke-miterlimit: 10;
-                      fill: none;
-                      fill-rule: nonzero;
-                      opacity: 1;
-                    "
-                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  <i class="fas fa-download mr-2"></i>
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="mt-20">
+            <h3
+              class="text-3xl font-bold text-center text-gray-800 mb-12"
+              data-aos="fade-up"
+            >
+              Technical Skills
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div
+                  class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 256 256"
+                    xml:space="preserve"
                   >
-                    <polygon
-                      points="12.54,81 5.32,0 84.68,0 77.45,80.99 44.95,90 "
+                    <g
                       style="
                         stroke: none;
-                        stroke-width: 1;
+                        stroke-width: 0;
                         stroke-dasharray: none;
                         stroke-linecap: butt;
                         stroke-linejoin: miter;
                         stroke-miterlimit: 10;
-                        fill: rgb(228, 77, 38);
+                        fill: none;
                         fill-rule: nonzero;
                         opacity: 1;
                       "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                    <polygon
-                      points="45,83.11 71.26,75.83 77.44,6.62 45,6.62 "
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(241, 101, 41);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                    <polygon
-                      points="45,36.67 31.85,36.67 30.95,26.49 45,26.49 45,16.56 44.97,16.56 20.09,16.56 20.33,19.22 22.77,46.6 45,46.6 "
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(235, 235, 235);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                    <polygon
-                      points="45,62.47 44.96,62.48 33.89,59.49 33.19,51.57 27.81,51.57 23.21,51.57 24.6,67.17 44.95,72.82 45,72.8 "
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(235, 235, 235);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                    <polygon
-                      points="44.97,36.67 44.97,46.6 57.2,46.6 56.05,59.48 44.97,62.48 44.97,72.81 65.33,67.17 65.48,65.49 67.82,39.33 68.06,36.67 65.38,36.67 "
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(255, 255, 255);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                    <polygon
-                      points="44.97,16.56 44.97,22.73 44.97,26.47 44.97,26.49 68.93,26.49 68.93,26.49 68.96,26.49 69.16,24.26 69.61,19.22 69.85,16.56 "
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(255, 255, 255);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
-                  </g>
-                </svg>
+                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                    >
+                      <polygon
+                        points="12.54,81 5.32,0 84.68,0 77.45,80.99 44.95,90 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(228, 77, 38);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <polygon
+                        points="45,83.11 71.26,75.83 77.44,6.62 45,6.62 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(241, 101, 41);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <polygon
+                        points="45,36.67 31.85,36.67 30.95,26.49 45,26.49 45,16.56 44.97,16.56 20.09,16.56 20.33,19.22 22.77,46.6 45,46.6 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(235, 235, 235);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <polygon
+                        points="45,62.47 44.96,62.48 33.89,59.49 33.19,51.57 27.81,51.57 23.21,51.57 24.6,67.17 44.95,72.82 45,72.8 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(235, 235, 235);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <polygon
+                        points="44.97,36.67 44.97,46.6 57.2,46.6 56.05,59.48 44.97,62.48 44.97,72.81 65.33,67.17 65.48,65.49 67.82,39.33 68.06,36.67 65.38,36.67 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <polygon
+                        points="44.97,16.56 44.97,22.73 44.97,26.47 44.97,26.49 68.93,26.49 68.93,26.49 68.96,26.49 69.16,24.26 69.61,19.22 69.85,16.56 "
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-semibold text-gray-700">HTML5</p>
               </div>
-              <p class="font-semibold text-gray-700">HTML5</p>
-            </div>
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
-              <div
-                class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 48 48"
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                 >
-                  <path
-                    fill="#0277BD"
-                    d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
-                  ></path>
-                  <path
-                    fill="#039BE5"
-                    d="M24 8L24 39.9 35.2 36.7 37.7 8z"
-                  ></path>
-                  <path
-                    fill="#FFF"
-                    d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
-                  ></path>
-                  <path
-                    fill="#EEE"
-                    d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
-                  ></path>
-                </svg>
-              </div>
-              <p class="font-semibold text-gray-700">CSS3</p>
-            </div>
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
-              <div
-                class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 48 48"
-                >
-                  <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-                  <path
-                    fill="none"
-                    stroke="#000001"
-                    stroke-miterlimit="10"
-                    stroke-width="3.3"
-                    d="M23.783,22.352v9.819 c0,3.764-4.38,4.022-6.283,0.802"
-                  ></path>
-                  <path
-                    fill="none"
-                    stroke="#000001"
-                    stroke-miterlimit="10"
-                    stroke-width="3.3"
-                    d="M34.69,25.343 c-1.739-2.727-5.674-2.345-5.84,0.558c-0.214,3.757,6.768,2.938,6.247,7.107c-0.365,2.92-4.874,3.858-7.193-0.065"
-                  ></path>
-                </svg>
-              </div>
-              <p class="font-semibold text-gray-700">JavaScript</p>
-            </div>
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
-              <div
-                class="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
-                >
-                  <g
-                    style="
-                      stroke: none;
-                      stroke-width: 0;
-                      stroke-dasharray: none;
-                      stroke-linecap: butt;
-                      stroke-linejoin: miter;
-                      stroke-miterlimit: 10;
-                      fill: none;
-                      fill-rule: nonzero;
-                      opacity: 1;
-                    "
-                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 48 48"
                   >
-                    <circle
-                      cx="45.001999999999995"
-                      cy="45.001999999999995"
-                      r="8.022"
-                      style="
-                        stroke: none;
-                        stroke-width: 1;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: rgb(97, 218, 251);
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="  matrix(1 0 0 1 0 0) "
-                    />
                     <path
-                      d="M 90 45.02 c 0 -6.305 -7.395 -11.77 -18.902 -15.069 c 2.896 -11.613 1.861 -20.749 -3.597 -23.9 c -4.555 -2.637 -11.154 -0.753 -18.583 5.281 c -1.305 1.061 -2.614 2.231 -3.919 3.499 c -1.305 -1.267 -2.614 -2.437 -3.919 -3.499 C 33.652 5.298 27.051 3.414 22.5 6.051 c -5.459 3.151 -6.494 12.287 -3.599 23.9 C 7.394 33.25 0 38.715 0 45.02 s 7.394 11.769 18.901 15.069 c -2.895 11.613 -1.86 20.749 3.599 23.9 c 1.313 0.76 2.797 1.123 4.415 1.123 c 5.11 0 11.545 -3.638 18.084 -9.952 c 6.539 6.315 12.974 9.952 18.084 9.952 c 1.62 0 3.103 -0.363 4.417 -1.123 c 5.459 -3.153 6.495 -12.288 3.599 -23.9 C 82.606 56.789 90 51.324 90 45.02 z M 51.386 14.369 c 4.498 -3.653 8.525 -5.579 11.525 -5.579 c 0.997 0 1.884 0.214 2.633 0.646 c 3.543 2.047 4.313 9.449 1.781 19.544 c -3.685 -0.844 -7.706 -1.481 -11.978 -1.878 c -2.449 -3.465 -5.012 -6.651 -7.619 -9.469 C 48.948 16.451 50.169 15.358 51.386 14.369 z M 57.538 52.257 c -1.418 2.457 -2.877 4.767 -4.356 6.937 c -2.618 0.196 -5.347 0.304 -8.182 0.304 c -2.835 0 -5.565 -0.108 -8.183 -0.304 c -1.479 -2.17 -2.938 -4.481 -4.356 -6.937 c -1.417 -2.455 -2.689 -4.872 -3.828 -7.237 c 1.14 -2.365 2.411 -4.783 3.828 -7.237 c 1.39 -2.408 2.847 -4.727 4.351 -6.937 c 2.62 -0.196 5.352 -0.304 8.189 -0.304 c 2.836 0 5.566 0.108 8.185 0.304 c 1.504 2.21 2.962 4.529 4.352 6.937 c 1.417 2.455 2.688 4.872 3.828 7.237 C 60.227 47.385 58.956 49.802 57.538 52.257 z M 63.44 49.611 c 1.122 2.665 2.059 5.236 2.822 7.684 c -2.501 0.564 -5.196 1.037 -8.064 1.399 c 0.927 -1.449 1.838 -2.941 2.727 -4.481 C 61.813 52.674 62.648 51.139 63.44 49.611 z M 45 69.566 c -1.737 -1.882 -3.494 -3.976 -5.239 -6.277 c 1.718 0.078 3.464 0.122 5.24 0.122 c 1.776 0 3.522 -0.044 5.239 -0.122 C 48.494 65.59 46.738 67.684 45 69.566 z M 31.799 58.694 c -2.867 -0.361 -5.561 -0.835 -8.061 -1.398 c 0.763 -2.447 1.699 -5.017 2.82 -7.681 c 0.791 1.526 1.626 3.061 2.514 4.599 C 29.961 55.753 30.872 57.244 31.799 58.694 z M 26.558 40.425 c -1.121 -2.664 -2.058 -5.233 -2.82 -7.681 c 2.501 -0.564 5.195 -1.037 8.063 -1.399 c -0.933 1.458 -1.846 2.95 -2.729 4.48 C 28.184 37.364 27.349 38.898 26.558 40.425 z M 44.999 20.444 c 1.775 1.929 3.531 4.043 5.244 6.306 c -1.718 -0.078 -3.465 -0.122 -5.242 -0.122 c -1.779 0 -3.526 0.044 -5.246 0.123 C 41.469 24.487 43.224 22.373 44.999 20.444 z M 60.924 35.826 c -0.883 -1.53 -1.795 -3.022 -2.728 -4.481 c 2.869 0.361 5.563 0.835 8.065 1.399 c -0.763 2.448 -1.7 5.018 -2.821 7.683 C 62.649 38.9 61.813 37.365 60.924 35.826 z M 24.456 9.436 c 0.751 -0.432 1.635 -0.646 2.633 -0.646 c 3.002 0 7.029 1.926 11.523 5.579 c 1.217 0.989 2.439 2.081 3.658 3.265 c -2.607 2.819 -5.17 6.005 -7.619 9.469 c -4.272 0.396 -8.292 1.034 -11.977 1.878 C 20.142 18.885 20.913 11.484 24.456 9.436 z M 3.913 45.02 c 0 -4.09 6.025 -8.459 16.034 -11.315 c 1.112 3.615 2.571 7.416 4.364 11.315 c -1.793 3.899 -3.252 7.7 -4.364 11.315 C 9.938 53.479 3.913 49.11 3.913 45.02 z M 24.456 80.603 c -3.543 -2.047 -4.314 -9.449 -1.782 -19.545 c 3.686 0.844 7.706 1.481 11.979 1.878 c 2.479 3.501 5.041 6.667 7.614 9.437 C 34.79 79.605 27.997 82.632 24.456 80.603 z M 65.544 80.603 c -3.546 2.029 -10.338 -1 -17.812 -8.231 c 2.573 -2.769 5.134 -5.935 7.612 -9.435 c 4.273 -0.396 8.295 -1.034 11.981 -1.878 C 69.857 71.154 69.087 78.556 65.544 80.603 z M 70.053 56.335 c -1.112 -3.615 -2.572 -7.417 -4.367 -11.317 c 1.793 -3.898 3.253 -7.7 4.365 -11.314 c 10.011 2.856 16.036 7.225 16.036 11.316 C 86.087 49.11 80.062 53.479 70.053 56.335 z"
+                      fill="#0277BD"
+                      d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                    ></path>
+                    <path
+                      fill="#039BE5"
+                      d="M24 8L24 39.9 35.2 36.7 37.7 8z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                    ></path>
+                    <path
+                      fill="#EEE"
+                      d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="font-semibold text-gray-700">CSS3</p>
+              </div>
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                <div
+                  class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 48 48"
+                  >
+                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                    <path
+                      fill="none"
+                      stroke="#000001"
+                      stroke-miterlimit="10"
+                      stroke-width="3.3"
+                      d="M23.783,22.352v9.819 c0,3.764-4.38,4.022-6.283,0.802"
+                    ></path>
+                    <path
+                      fill="none"
+                      stroke="#000001"
+                      stroke-miterlimit="10"
+                      stroke-width="3.3"
+                      d="M34.69,25.343 c-1.739-2.727-5.674-2.345-5.84,0.558c-0.214,3.757,6.768,2.938,6.247,7.107c-0.365,2.92-4.874,3.858-7.193-0.065"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="font-semibold text-gray-700">JavaScript</p>
+              </div>
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                <div
+                  class="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 256 256"
+                    xml:space="preserve"
+                  >
+                    <g
                       style="
                         stroke: none;
-                        stroke-width: 1;
+                        stroke-width: 0;
                         stroke-dasharray: none;
                         stroke-linecap: butt;
                         stroke-linejoin: miter;
                         stroke-miterlimit: 10;
-                        fill: rgb(97, 218, 251);
+                        fill: none;
                         fill-rule: nonzero;
                         opacity: 1;
                       "
-                      transform=" matrix(1 0 0 1 0 0) "
-                      stroke-linecap="round"
-                    />
-                  </g>
-                </svg>
+                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                    >
+                      <circle
+                        cx="45.001999999999995"
+                        cy="45.001999999999995"
+                        r="8.022"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(97, 218, 251);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <path
+                        d="M 90 45.02 c 0 -6.305 -7.395 -11.77 -18.902 -15.069 c 2.896 -11.613 1.861 -20.749 -3.597 -23.9 c -4.555 -2.637 -11.154 -0.753 -18.583 5.281 c -1.305 1.061 -2.614 2.231 -3.919 3.499 c -1.305 -1.267 -2.614 -2.437 -3.919 -3.499 C 33.652 5.298 27.051 3.414 22.5 6.051 c -5.459 3.151 -6.494 12.287 -3.599 23.9 C 7.394 33.25 0 38.715 0 45.02 s 7.394 11.769 18.901 15.069 c -2.895 11.613 -1.86 20.749 3.599 23.9 c 1.313 0.76 2.797 1.123 4.415 1.123 c 5.11 0 11.545 -3.638 18.084 -9.952 c 6.539 6.315 12.974 9.952 18.084 9.952 c 1.62 0 3.103 -0.363 4.417 -1.123 c 5.459 -3.153 6.495 -12.288 3.599 -23.9 C 82.606 56.789 90 51.324 90 45.02 z M 51.386 14.369 c 4.498 -3.653 8.525 -5.579 11.525 -5.579 c 0.997 0 1.884 0.214 2.633 0.646 c 3.543 2.047 4.313 9.449 1.781 19.544 c -3.685 -0.844 -7.706 -1.481 -11.978 -1.878 c -2.449 -3.465 -5.012 -6.651 -7.619 -9.469 C 48.948 16.451 50.169 15.358 51.386 14.369 z M 57.538 52.257 c -1.418 2.457 -2.877 4.767 -4.356 6.937 c -2.618 0.196 -5.347 0.304 -8.182 0.304 c -2.835 0 -5.565 -0.108 -8.183 -0.304 c -1.479 -2.17 -2.938 -4.481 -4.356 -6.937 c -1.417 -2.455 -2.689 -4.872 -3.828 -7.237 c 1.14 -2.365 2.411 -4.783 3.828 -7.237 c 1.39 -2.408 2.847 -4.727 4.351 -6.937 c 2.62 -0.196 5.352 -0.304 8.189 -0.304 c 2.836 0 5.566 0.108 8.185 0.304 c 1.504 2.21 2.962 4.529 4.352 6.937 c 1.417 2.455 2.688 4.872 3.828 7.237 C 60.227 47.385 58.956 49.802 57.538 52.257 z M 63.44 49.611 c 1.122 2.665 2.059 5.236 2.822 7.684 c -2.501 0.564 -5.196 1.037 -8.064 1.399 c 0.927 -1.449 1.838 -2.941 2.727 -4.481 C 61.813 52.674 62.648 51.139 63.44 49.611 z M 45 69.566 c -1.737 -1.882 -3.494 -3.976 -5.239 -6.277 c 1.718 0.078 3.464 0.122 5.24 0.122 c 1.776 0 3.522 -0.044 5.239 -0.122 C 48.494 65.59 46.738 67.684 45 69.566 z M 31.799 58.694 c -2.867 -0.361 -5.561 -0.835 -8.061 -1.398 c 0.763 -2.447 1.699 -5.017 2.82 -7.681 c 0.791 1.526 1.626 3.061 2.514 4.599 C 29.961 55.753 30.872 57.244 31.799 58.694 z M 26.558 40.425 c -1.121 -2.664 -2.058 -5.233 -2.82 -7.681 c 2.501 -0.564 5.195 -1.037 8.063 -1.399 c -0.933 1.458 -1.846 2.95 -2.729 4.48 C 28.184 37.364 27.349 38.898 26.558 40.425 z M 44.999 20.444 c 1.775 1.929 3.531 4.043 5.244 6.306 c -1.718 -0.078 -3.465 -0.122 -5.242 -0.122 c -1.779 0 -3.526 0.044 -5.246 0.123 C 41.469 24.487 43.224 22.373 44.999 20.444 z M 60.924 35.826 c -0.883 -1.53 -1.795 -3.022 -2.728 -4.481 c 2.869 0.361 5.563 0.835 8.065 1.399 c -0.763 2.448 -1.7 5.018 -2.821 7.683 C 62.649 38.9 61.813 37.365 60.924 35.826 z M 24.456 9.436 c 0.751 -0.432 1.635 -0.646 2.633 -0.646 c 3.002 0 7.029 1.926 11.523 5.579 c 1.217 0.989 2.439 2.081 3.658 3.265 c -2.607 2.819 -5.17 6.005 -7.619 9.469 c -4.272 0.396 -8.292 1.034 -11.977 1.878 C 20.142 18.885 20.913 11.484 24.456 9.436 z M 3.913 45.02 c 0 -4.09 6.025 -8.459 16.034 -11.315 c 1.112 3.615 2.571 7.416 4.364 11.315 c -1.793 3.899 -3.252 7.7 -4.364 11.315 C 9.938 53.479 3.913 49.11 3.913 45.02 z M 24.456 80.603 c -3.543 -2.047 -4.314 -9.449 -1.782 -19.545 c 3.686 0.844 7.706 1.481 11.979 1.878 c 2.479 3.501 5.041 6.667 7.614 9.437 C 34.79 79.605 27.997 82.632 24.456 80.603 z M 65.544 80.603 c -3.546 2.029 -10.338 -1 -17.812 -8.231 c 2.573 -2.769 5.134 -5.935 7.612 -9.435 c 4.273 -0.396 8.295 -1.034 11.981 -1.878 C 69.857 71.154 69.087 78.556 65.544 80.603 z M 70.053 56.335 c -1.112 -3.615 -2.572 -7.417 -4.367 -11.317 c 1.793 -3.898 3.253 -7.7 4.365 -11.314 c 10.011 2.856 16.036 7.225 16.036 11.316 C 86.087 49.11 80.062 53.479 70.053 56.335 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(97, 218, 251);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-semibold text-gray-700">React</p>
               </div>
-              <p class="font-semibold text-gray-700">React</p>
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
+                <div
+                  class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAENElEQVR4nO2Y3U9adxjHaXaxy95v/0Z9mbNbBrhSUBSUZNmS7VKzdt26pV22Lm0Hm9IqtioCKg43ixdYi26x2rSbTezkAIcDHA7F6lxxzUqr2dTWvijis/xwPbAMOC9ozs35Jp+7h+f3/XjOUY4SiRgxYsSI2cuABPb16chjfTpq1q6jknYdBXtM0q6jYvYG6iN0dtECvfWUpa+BAmGImIsqb9eRr/U1REBIeuqjZbwFerQRY299BASmhbdAr5YcEFxASw4UcQXIoZ56dBkFxclbwKYhL9u0ERASqzbi4i+gJcdsWhKYsL9DgeP9aF7636UYd9jyYNWE3bwFrJrwTasGLSlMaGwZmPJ0JQmxG3+Ds2mWcZ81C4smPMVbwFIXjlvSSwrDRuBFNp+lwH1qgXGnJcPvvMr36PD93epQqrs2DEwER5foguGflmHs9ALNhDEO2GACHi9v0jOPlzbBqiUZ96ZRh1KoC2cBc01I0aUOARsId0Zgynov50z/BxQ8W0vScyNfzLPajTDXEkrOAh01xHcdNUFgQ8D9kC72i+Ve3rm56RV67qrxLqvdiIvVRD+n8iZV8NULquCTi9Xow8wErvxXIN/cYvARPTd4JMZq9w7EOurE7ievmHvZpAxca1cRwBY8S+Dn7j9yzox8NQ+p5HZ6Bolw2d+uIsCkJCZRt7zFXTrXS+1KorbtcMBrUgaAC/jIA1ogNvUXXO9c3KFrEX4dvA8L3lXY3ukOiTtPwPYeyWm/6V/alAFPmyqgRl3/J3BegWtaD+PAB3+WQKHEiTVwNEV5ndGaBeqaU+CcAgc++C5nBJ6uJWEl8Zxm7eEGJDdSGYttgOD4ErRWB3idhcgpgC5LS5Wvxvi2f8Z4yA9c8GYJXOuK55wZOjELf8bW6Tn0GSPHc1C3c4d8uW+h7Ie4uco32VzlA7Zgwwm62GRnPO/cBS0BW5s7D8NWchtMdQHWZ3xb5Zso+BBn54z81isGGbb+jdwLbMgWmOi4W3A2MZe5Cj8cv81qP+qCOkm4xCD39u+FwKPlDXrWcSzKTkDu5faHLC0g8yp2W2DEME/PoVupVY2z2q+Xe7h/lTDK8f0GqSdlkGHAhMd1ny7mu5KASydiNK7Td2DSHId5bCX9G+hF8B8fMO5F6KXYFuoi4RO9DItzFWCTBf8qGJU+lgIefl+nUQxS7OZuCTxf34Lf/Kvp28ggZ95pyFwB/i80eunMqF42A0w0KzE4X+fLS4sSY9yhz8PXshn+r5Rn35oePiudBiE5I53m/1L/5RvXh069eQMExslb4GTluOPzg1dBSE5Wjjt4C3xaMWr87PVREJQKN/9/LX5cOVz2ScUwCMnxcleppJgcLXeaj5Y7QRDKLnVKig/sayp1HGkscdxuLHEkm0oHYC9pRGeUDEQbD3z/ITp7FwTEiBEjRowkb/4B37T+Yy4GpvkAAAAASUVORK5CYII="
+                    alt="bootstrap"
+                  />
+                </div>
+                <p class="font-semibold text-gray-700">Bootstrap</p>
+              </div>
+              <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+                <div
+                  class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFfUlEQVR4nO2Z20sjVxzHR0tLu/QG7fZp2z9ACoVOHDNJdJI4mcxkotgWr9UnFQQv9cFL8RbxwY24also26UPImjFiu2DVBHRBx/ESx+sbkFQtGIsqHW90EQTSU75HXZCms3EyWXcF7/wgzAz0e/n/H5zzvmdEMSd7nSnhJWfn/9KdnY2bTabW8xm84TJZPrTZDI9MxqNPgiGYZ5lZWU9zczMnDAYDC16vV5LEEQq8bLFcdyHFovFybKsKzs7G0GYzWYcJpMJGY1GHAzD4MjKykKZmZk49Hr9vsFgeEhR1INbN87z/H2O456wLOu1WCyIZVkUK4DBYMCh1+u9NE0/Zhjm/Vsxz3FcicViOeE4DoH5JAAgnU4H8Q9N00WqGSdJ8lWe53+0Wq0IzKsAgGiahvgB/ldSzdvt9ntWq3WK53l0CwBIq9X+RpLkvWSOPDZ/iwCIoqjZtLS01xIGgLIRBAGbhwDjklkIMJ8IgE6nQxkZGThCAZ5fe5yo+S/BfCgAjHhPTw+amZlB/f39KDc3F5sF0xKAZD7UeDgAGBUEAfX29qKpqSnU1taGjYcBII1GUxiX+by8vPcEQTgOBwCD29vbSNLl5SUaGRnBpSUZLioqQpWVlai+vh5HRUUFKigoCJYLZGx0dBR5vd7g31lbW4OyeQEgPT39hCTJ2KdYURSf2Gw2FA4A4ff7UbgODw/R+vo6BpKTx+PBRo+Pj1+4d3V1FREArlEU9X1M5nmef2Cz2byRAHJycpBaouQBvCRJfhTL6DtFUUSRAOAljjbK8er8/BzKRQ4A3oWHisw7HI5UURT35QDgHdjY2Eg6wPLycrQMAIALNo03AtjtdhrMRwKA0W9tbUWBQCDpAIFAANXV1WHzkQAgOyRJUkrKp0UOAKbQ/f19pJb29vaw6SgAXyvJwC+RAGCabG5uRmqruro6aD4cQKPRjCvJwNNIAFA+Y2NjqgMMDQ1hwzIA60oycBIJAMpnYWFBdYDZ2VlsVgbgWEkGvJEAYPVcWVlRHWBxcTEawJUSALdcBubn51UHmJ6ejgbwr5IS+kvuHRgfH1cdYHh4WPYdIElyVwnA73KzUGdnp+oAjY2N0WahZSUA43LrAGyd3W63aubdbjde6aOsA2NKAOqiLWSQYrU0ODgYdSHTaDTVNwKIoviJHIDUTsK2Odna3NwMNjpRAD6OazMnmZf2Q1BKS0tLSd3IcRwXsSMLAdgjCCKFUCKbzdYqAYBp6LBqamqCTTwE1KrD4UBbW1txG9/Z2UEdHR1B4xF64lCAm/dBoSdvoiheAgCM/MDAAO7CoHRqa2vxoiY199D7lpSU4GcmJyfR6emprGG4B89AL11YWIiNSicS4acSYQBXNE1/QMQiURS/k0oIRryhoSHYEpaWlv4vGwACjTxch9ZQTj6fD5WVleHe+KZjlYwQgPT09G9iMv88C28LguAKXcicTic6OjrCWwooMciEBACZgFX0Js3NzWGzMQD8TZLkO0Q8EgThi0j9wMHBAYaA+i0uLsbR1dWFLi4ubgQ4OzvDBmMAyIvLfEgmHoV2ZO3t7bh7glhdXUW7u7vI5XLhXaQSwfeUAlAU5SSSoBRBEH6SemIol+7u7oRWZIUAPyftR5D8/Pw3eJ6fkNYDgIDPTU1NqK+vD5+uQbemtFdWADDOMMzrRJKVYrVaO0MPd0PPReHYMBkAWq32W1V/frJarZ9zHOcKP51OAsC+Vqv9jLgN5ebmvsVxXD/LsleJAuh0ukudTveIYZg3idsWwzDvsiz7ldls3q2qqkJKVV5eDuVyoNfrOw0Gw33iZQshlHp0dPTp6elpg8fj+dXn861fX18f+P1+DwR89vl8f8A9eAaehe8Qd7rTnYhE9R+kV7M+FoRFRQAAAABJRU5ErkJggg=="
+                    alt="github"
+                  />
+                </div>
+                <p class="font-semibold text-gray-700">Git/GitHub</p>
+              </div>
             </div>
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
-              <div
-                class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Featured Projects
+            </h2>
+            <p class="text-xl text-gray-600">
+              A showcase of my recent work and personal projects
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="relative">
+                <a
+                  href="https://mykelsown.github.io/Skin-By-Wura/"
+                  target="_blank"
+                  ><img
+                    src="./assets/imgs/skin-by-wura.png"
+                    alt="E-commerce Platform"
+                    class="w-full h-48 object-cover cursor-pointer"
+                /></a>
+                <div
+                  class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-sm font-semibold"
+                >
+                  Featured
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
+                  <a
+                    href="https://mykelsown.github.io/Skin-By-Wura/"
+                    target="_blank"
+                    >E-commerce Platform</a
+                  >
+                </h3>
+                <p class="text-gray-600 mb-4">
+                 SkinByWura, an elegant and user-friendly online store dedicated to premium skincare products. This platform provides customers with a seamless shopping experience, showcasing a curated selection of skincare solutions that cater to diverse needs.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm"
+                    >html</span
+                  >
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 font-semibold"
+                  >
+                    <i class="fab fa-github mr-1"></i>Code
+                  </a>
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 font-semibold"
+                  >
+                    <i class="fas fa-external-link-alt mr-1"></i>Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="https://climateeguard.netlify.app/" target="_blank">
+                <img
+                  src="./assets/imgs/climate-guard.png"
+                  alt="Task Management App"
+                  class="w-full h-48 object-cover cursor-pointer"
+                />
+              </a>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
+                  <a href="https://climateeguard.netlify.app/" target="_blank"
+                    >Task Management App</a
+                  >
+                </h3>
+                <p class="text-gray-600 mb-4">
+                 ClimateGuard is a decentralized platform that combines AI-powered weather predictions, blockchain verification, and tokenized incentives to drive real-world climate action. 
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm"
+                    >React</span
+                  >
+                  <span
+                    class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm"
+                    >Vite</span
+                  >
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 font-semibold"
+                  >
+                    <i class="fab fa-github mr-1"></i>Code
+                  </a>
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 font-semibold"
+                  >
+                    <i class="fas fa-external-link-alt mr-1"></i>Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a
+                href="https://mykelsown.github.io/forex-risk-reward-calculator/"
+                target="_blank"
               >
                 <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAENElEQVR4nO2Y3U9adxjHaXaxy95v/0Z9mbNbBrhSUBSUZNmS7VKzdt26pV22Lm0Hm9IqtioCKg43ixdYi26x2rSbTezkAIcDHA7F6lxxzUqr2dTWvijis/xwPbAMOC9ozs35Jp+7h+f3/XjOUY4SiRgxYsSI2cuABPb16chjfTpq1q6jknYdBXtM0q6jYvYG6iN0dtECvfWUpa+BAmGImIsqb9eRr/U1REBIeuqjZbwFerQRY299BASmhbdAr5YcEFxASw4UcQXIoZ56dBkFxclbwKYhL9u0ERASqzbi4i+gJcdsWhKYsL9DgeP9aF7636UYd9jyYNWE3bwFrJrwTasGLSlMaGwZmPJ0JQmxG3+Ds2mWcZ81C4smPMVbwFIXjlvSSwrDRuBFNp+lwH1qgXGnJcPvvMr36PD93epQqrs2DEwER5foguGflmHs9ALNhDEO2GACHi9v0jOPlzbBqiUZ96ZRh1KoC2cBc01I0aUOARsId0Zgynov50z/BxQ8W0vScyNfzLPajTDXEkrOAh01xHcdNUFgQ8D9kC72i+Ve3rm56RV67qrxLqvdiIvVRD+n8iZV8NULquCTi9Xow8wErvxXIN/cYvARPTd4JMZq9w7EOurE7ievmHvZpAxca1cRwBY8S+Dn7j9yzox8NQ+p5HZ6Bolw2d+uIsCkJCZRt7zFXTrXS+1KorbtcMBrUgaAC/jIA1ogNvUXXO9c3KFrEX4dvA8L3lXY3ukOiTtPwPYeyWm/6V/alAFPmyqgRl3/J3BegWtaD+PAB3+WQKHEiTVwNEV5ndGaBeqaU+CcAgc++C5nBJ6uJWEl8Zxm7eEGJDdSGYttgOD4ErRWB3idhcgpgC5LS5Wvxvi2f8Z4yA9c8GYJXOuK55wZOjELf8bW6Tn0GSPHc1C3c4d8uW+h7Ie4uco32VzlA7Zgwwm62GRnPO/cBS0BW5s7D8NWchtMdQHWZ3xb5Zso+BBn54z81isGGbb+jdwLbMgWmOi4W3A2MZe5Cj8cv81qP+qCOkm4xCD39u+FwKPlDXrWcSzKTkDu5faHLC0g8yp2W2DEME/PoVupVY2z2q+Xe7h/lTDK8f0GqSdlkGHAhMd1ny7mu5KASydiNK7Td2DSHId5bCX9G+hF8B8fMO5F6KXYFuoi4RO9DItzFWCTBf8qGJU+lgIefl+nUQxS7OZuCTxf34Lf/Kvp28ggZ95pyFwB/i80eunMqF42A0w0KzE4X+fLS4sSY9yhz8PXshn+r5Rn35oePiudBiE5I53m/1L/5RvXh069eQMExslb4GTluOPzg1dBSE5Wjjt4C3xaMWr87PVREJQKN/9/LX5cOVz2ScUwCMnxcleppJgcLXeaj5Y7QRDKLnVKig/sayp1HGkscdxuLHEkm0oHYC9pRGeUDEQbD3z/ITp7FwTEiBEjRowkb/4B37T+Yy4GpvkAAAAASUVORK5CYII="
-                  alt="bootstrap"
+                  src="./assets/imgs/forex-calculator.png"
+                  alt="Weather Dashboard"
+                  class="w-full h-48 object-cover cursor-pointer"
                 />
+              </a>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
+                  <a
+                    href="https://mykelsown.github.io/forex-risk-reward-calculator/"
+                    target="_blank"
+                  >
+                    Forex Calculator
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  A simple, clean, and intuitive Forex Risk-to-Reward Calculator
+                  that helps traders plan trades by calculating risk, reward,
+                  position size, and risk-to-reward ratio before entering the
+                  market.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                    >Tailwind css</span
+                  >
+                  <span
+                    class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
+                    >API</span
+                  >
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 font-semibold"
+                  >
+                    <i class="fab fa-github mr-1"></i>Code
+                  </a>
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 font-semibold"
+                  >
+                    <i class="fas fa-external-link-alt mr-1"></i>Demo
+                  </a>
+                </div>
               </div>
-              <p class="font-semibold text-gray-700">Bootstrap</p>
             </div>
-            <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
-              <div
-                class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+          </div>
+
+          <div class="text-center mt-12" data-aos="fade-up">
+            <a
+              href="https://github.com/Mykelsown"
+              class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors md:text-2xl"
+            >
+              View All Projects
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & Education Section -->
+      <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Experience & Education
+            </h2>
+            <p class="text-xl text-gray-600">
+              My professional journey and academic background
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Experience -->
+            <div data-aos="fade-right">
+              <h3
+                class="text-2xl font-bold text-gray-800 mb-8 flex items-center"
+              >
+                <i class="fas fa-briefcase text-blue-600 mr-3"></i>
+                Experience
+              </h3>
+              <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-blue-200">
+                  <div
+                    class="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"
+                  ></div>
+                  <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800">
+                      Front-End Web Developer
+                    </h4>
+                    <p class="text-blue-600 font-medium mb-2">
+                      Freelance • 2023 - Present
+                    </p>
+                    <p class="text-gray-600">
+                      Developed responsive web applications using modern
+                      JavaScript frameworks. Collaborated with clients to
+                      deliver pixel-perfect designs and optimal user
+                      experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div data-aos="fade-left">
+              <h3
+                class="text-2xl font-bold text-gray-800 mb-8 flex items-center"
+              >
+                <i class="fas fa-graduation-cap text-green-600 mr-3"></i>
+                Education
+              </h3>
+              <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-green-200">
+                  <div
+                    class="absolute -left-2 top-0 w-4 h-4 bg-green-600 rounded-full"
+                  ></div>
+                  <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800">
+                      National Diploma in Mechatronics Engineering
+                    </h4>
+                    <p class="text-green-600 font-medium mb-2">
+                      Lagos State Polytechnic (LASPOTECH) • 2020 - 2022
+                    </p>
+                    <p class="text-gray-600">
+                      Gained strong analytical and problem-solving skills
+                      through engineering coursework. Developed proficiency in
+                      programming, automation, and system design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Let's Work Together</h2>
+            <p class="text-xl text-gray-300">
+              Ready to bring your ideas to life? Get in touch!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div data-aos="fade-right">
+              <form class="space-y-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors md:text-2xl"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div data-aos="fade-left">
+              <div class="space-y-8">
+                <div class="flex items-center">
+                  <div
+                    class="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeElEQVR4nO2Zu2tUQRSHP18IahMiusbEWKS7EHzg35AqgkUIspCgSDAptVAbOwsRQYigjdgvefjCyNqIoOLbzqQKFopo1Gw6GyMD58Iwe+7dm917NxOYD06xO7Mz5zfnzpxzZyEQCAQCgXzZBBwHrgEVz+wWMARsbSRiH/AGWPXcPgH7k0RsBz5Lx5/AdWAcGPPExoEbwG/x8SOwSxNyXjosAl34SxfwRXy9qHV4JY2j+M8Z8fWt1vhNGvvxn37x9bvW+EMaD+E/kfhqfK5jURqfAd34Swm4nyakYh1vf4BT+EcZ+GX5qQo5DPx1zuvHnkSnBNxT8okqxDAgOWTVo+iUnShkEmLYA0wpP3oC9LTPf/YC0w0yvCpkB7Db+nwSWFqn6JSVKNSAy8BpKyGqQl4CK0Cn82zOKitR1N4pJeyFKnDA6jeYJiTOI+aMdhlS9s6y1ECmWs4DbY5awhxRs0LSntlW907SuFUnCrkJsVduKafoaGPVMoyVi5B4FWdaiE7S76spUShESCvRaTYKhQqJ3w8eKqs7Bxyx+pli9EFCFHrXOGdUhJCYUckzrqMrsuLa982eelGRQtLyjmvPgb4W5omKFhJzAngB/HMEvAOGc8g9UbuExHQAx+SNbmeO40btFrIWTGl0G3iq2F3n+sdrIVcb7Ks7G0WIWfU0IY82ipBzDYRcySokvg6yk1g72Swn2gXFRoBtVt+j4qvxuY7X0miSlO+cFV/NpWIdl6TxqycXDkn0WE+PiVYd5kJ4QTqYUuMmMOHB5fWY2IT4tCw+zqflpoPAhwwlxnrb+yyF5hYpMSY9+GOn4tik+GYOhkAgEAgEyIv/NEvbsULxqh4AAAAASUVORK5CYII="
+                      alt="new-post"
+                      class="w-9"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold">Email</h4>
+                    <p class="text-gray-300">mykelsamuel512@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="bg-green-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADS0lEQVR4nO2ZS0hUURjHf6ZZGJWUVqYWGbQSMlpkRYtE2oRBRAVFmGIYZLWM1tKqwih6CLWpXUXagx4LSVr0EiwhIm3Rg4qg1J5oz4lD/wuHYebOXBnvnIH5wd3M/c7c79x7vv/5vu9AlixpZR3QA4wCfcByMox84DgQibqGgVIyhOlAlxwfAVqAIuCyfrtOBjAHeCyH3wJLo+591L1GHGYa0CtHnwLzY9hs1f1PwDwcZBJwR04+AWb62Ha4vMQOyLlXQFkCW7PEBmVfj2MMybHVSdpvk70ZV4JDjMqxwgBjrmmMWWrO8FxOVQYYU6agN+M24wgdcsioUhB2aFw/jtAih84GHFekcb+BHBxgIfAX+AJMDTBuuyZi8jFn6JJTO5O0nwy8dFGGN1nrPS8J+/2yfwRMwCFylZoY55oT2M4CPsu2FgfZIOfeAQU+du2yMxmxk+QAD+TkQZ/Y+CqbJhxmCfAT+AOsimOzxyq0FuAwrVbgF8T5cldl8zDBMkx7qdsnR03JG4tCSxw6JRZOUqVS1zja4LORfpBNuyu7eywarNp9WUyL/50VL/jbcJijliTH66DUWF/vMI4yEbgtJ+/6BHad1C6iitNJioEXcvKGxCAWG63JtLkaM4uA93LyvI9K1VnL7JSrarZYm6Bx8rTPG6+xBKAzznLMlZiYpNNsvgNKXENjBfAticCutqS5J6pPVmvtU9HXRWA2IbEG+GFNJt6XqbA2zSGVxl5GEFHcmVqmSPe8jNp0NLeENZn11mTO+MSCyQCuRL114/A+JaA25RITz65DfbRQvoy3zC74qJn5YrsVNydVz/jRaMXioPpo485K66E3EySQpjWbLKVW7yyiJTmXEPIyT5rvpbj7WG91Qod9UqWU7jNeM+JNih9YYomEketQMoBuPXDUJ2seCzP0v98JMTc7Zq3tEykqvPZa+V6oNFjN8QGJwliptqR+LWmgytrBTRpyCJgS8D8qLCE5QhrJVw/gl1XXNCfZBCwGnmncLS3btGMOVu9bsdOv9my8XnO5ld70BuxJjzs5agJ6bzmixvk5HWlU6njcZM+vLbkNLYkMSp4Oh7p0ChCJc3VrYhmBCeZdwCWp24iy39aAKU2WLKSQf3jSBy3qRwNwAAAAAElFTkSuQmCC"
+                      alt="phone--v1"
+                      class="w-9"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold">Phone</h4>
+                    <p class="text-gray-300">09132392431</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADXUlEQVR4nO2ZW0tVQRTHf3rskB6LTEgss8tLHbtJ9AkqypeweuhTlBhKZBB9gQTFk0VgFyi6UIldpLR67CECUwqiJ7PooS+QdgpjYG0YFnP20bNnHy32Hxbonpk1859Zsy5zIEGCBAkS/GeoApqBrIj5O8U/gBTQBuSAKWAOmFcyJ20DwOHlRqwW6Aa+ORZeTMyYLiCz1CSOAV+LLPaXSFifGaB9KQikgSsFFj0OnARagQagQqRBvp0CXgJ5x/hB0V02UxpXCzCLugw0LkJPo2yGJjRWDlNLO0hMANsi6NwOTCqdL+I+GW1ODz3tnjnlR0r3JWK82JpEpUhLia60SsYGeobVHN4dQK3yThPWSRyXb9+Bs8BKa5whVydiE60GemSMGXvUmmfSmucLUOOTSLe62PadOKd2cRoYAj4Df6zvv+XbkPSxx5gNCJBVDuC0LxIpFeyMdyKESCliEzG4qmKMlwygTcUJ7WJPeCBidNhYr07loA8iOUuhcb0avR6IXHTofWW19/sgMmUpNBHbRrPYflQiRsdGpbvDan8flUSVymJNimHjjAcSgRiHYmOv1TYb9Z40qcnWqfZrHokYb2ajQbVviEKkRV10E7RsPPNIxOiyUamy5qwvInOSxdq455HIHaW7Qpl11qdprVHtFzwSOa901/k0rZTald2qfZ9HItqRtFptP30ExTD3azDqgcRTh94OldtFxoClcMTRXi85VKkkPgFrHXqfWH36fBA5ZCnMSxB0kbmtksRiYvreKkBiswq0B3wQSakUvlc8ykfgLbDJ6rtVstUbIc9B14FOYEvInH0qadRuv2R0qcXsEgLTYlarVf+gRnGJKdDCsEfFD0PaGzKyM4Hyd1IcBVXjGzEH5LTuhhC5GTJPtegO+k77LqyQKs5e0LCY3Wv539j0B+BHkbthvFyhvG5E9T1CTBhUE90XW3+8iIs+WuDEH6h+pnyIDWl5qplXKfYOYJVc9voisUUT2el4DnoOrCBmZBxk8vJ8E9QUCyHSLCecd5DIUCakZeGu2DCmHIOWGak0XaaYK8dJuNAuTzalRnXbO8V2sReKGgmCxV7lC51OZxwuNgoq5bWjXxzArGPhs5IAmsi932fEjhMpqWeCn96altsvVAkSJEiQgKj4CxZ8d6JZl0sKAAAAAElFTkSuQmCC"
+                      alt="github"
+                      class="w-10"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold">GitHub</h4>
+                    <a
+                      href="https://github.com/Mykelsown"
+                      class="text-blue-400 hover:text-blue-300"
+                      >mykelsown.github.io</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="bg-cyan-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFM0lEQVR4nO2a2W9VVRTGf61BRaW0Di++iLTw5IDDg1ERp2g0mjhQVBK1ElBwqmjC4JM4NTxo9B+oGJ8cMCZiEHGWiAoiDikyqC8OlRrEgoJYe8xKvk1WNueec+695xZq+JKT9J717XXOOntYa3+7cBiFMV7XqEE7MAdYBnwK7ACS6Nohm3Fmq80hgTZgPvBFyksXvTYAD8jXiOMEYCkw6F7I/h5yv18ELnS/pwIvud9DUfs/gJ6RCqgJmAUMuBd4E7gZWKzffwG3uTaBF3A7sEf3rM0twCrH2w506VkNwfHAa+6BHwIXyHYx8A8wDEyP2sWBGDrFtTbTdM967yPHf7URvTMZ+N4NIfuqAWOATbI9ktI2LRDDo7q/ST4CrDd2ybYN6CgriLOAX+V4fYrjB2X7FjiyikCMu1k28+ExCfhcNnv2lDJ6IgTxLnBcZB+rMW32qyr4qBSI4Wo3L8yXxzjgfRdMzT3T5oZTH3BMCudO2b/M8JMVCGqbKK/EONYN261AK1WiKZrYYejcEzn7RLZ5dQQyT/a17t543Q9DL1zLq13NZrmJvRD4zjnbp+VyseO01BFIi5vcC4A3gL2unfXEQy7n+IUmN9kNRF/6CC2rqxSI/0q7df9ZYC5wJXAuMFG9F3ituneOOHcBTwMrXSCJS5artUzbs9FoCPOl0LK8VA0+AJor5JMuN8nLvAZUr52Y8txml2esAshEm+vCkOzSYON0p3jnAddoWPTqS67XQvG7e8mdumfL6tsqHBcB1wHnO05TxnOnunIms1dCTliTE/Ak8X4kH3lzJOBn8fIq4o/F684ihSr2hhxnneK9XmIgK8SbXvDZ1uupaBfhT+DoHGc94i4pMZDHxHsihzdWhalxJ6QR5shoXyYPy8WdUWIgVkEb7+UC3JXiWpo4AM/LeF8BR6F0uKTEQC51pVAeusV9Ls34mYxWkufhG3FPKzGQM8T7qgD38pRqYD/CHvvUKlaYk0sMxHwl8p2HMJ9/S0s2w8qofm9QCX/LUVrZXmsg5mtYvvPqqTF613/jpN3SgCw9Ute4/2UgzTUOraNKHFrmK1HlS61Da7RN9omVJjtSAIsuv1+Le3qJgZxZYLcZcJm4VncdgGWjMCH2phlny2g7tDy8Iu5Nh2KJ0u6KxljRiPGkuKZNHcyi8ZRKpA0i3FiwlF5RYiA2Eqop49dlkeaLZHVXFjrE+6nEQH4Rz1akLKwV7/4sUpu2kYm02CJbXdumXi9V5QVNVtug/eA4lba6tj2+VtvlwMkqTy5yvFyNq8eJ1Gniw0nau3hFvqxru4QNEzhiNGsLXmQe7e+VoJCYBIMkGdtEvROdgSSScmwVeUoBWol9thJrJTnoCslBz0hK2h353Ae8FclB98rWX43i2KVGgxLHtrqH7NUkX+ACqVegG1SJtEjnLaEESiQOLnTqzq1UgSadT8SS6dzopRslmbYCd+uZ/h2K5JjUIbbNidgmKFcSsTfWEcjGHBG7T/Yt9ZwOd7hjhffikrnBxwotrhTqL+MEeIocJUqYJs6liXqb6zjosfzlMdlpbP0qKEtBhxtmu7QYpB29LakikFCS9EV7oDucqL2lEWfxrU7PSrSmh6Q5zR2GdhYIZIY7DLUkF3TdNdHEbth/TDTpfCLMm0Tr/UzgYf3eE/VYHEhXdDw9U8J34PVXu8TWgzZVAKGcSfT3UPRF438YCOV/pX8YeLyW47WyAuqWoFxrWbJOPg5KAGmYoI1OrxJlWi02oMTXK27F/cShiJacEuYwcPgPknvUyL7T8dYAAAAASUVORK5CYII="
+                      alt="globe--v1"
+                      class="w-9"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold">Portfolio</h4>
+                    <a
+                      href="https://github.com/Mykelsown"
+                      class="text-blue-400 hover:text-blue-300"
+                      >mykelsown.github.io</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-black text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-gray-400">
+              &copy; 2024 Micheal Samuel. All rights reserved.
+            </p>
+            <div class="flex justify-center space-x-6 mt-4">
+              <a
+                href="https://github.com/Mykelsown"
+                class="text-gray-400 hover:text-white transition-colors md:text-2xl"
               >
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFfUlEQVR4nO2Z20sjVxzHR0tLu/QG7fZp2z9ACoVOHDNJdJI4mcxkotgWr9UnFQQv9cFL8RbxwY24also26UPImjFiu2DVBHRBx/ESx+sbkFQtGIsqHW90EQTSU75HXZCms3EyWXcF7/wgzAz0e/n/H5zzvmdEMSd7nSnhJWfn/9KdnY2bTabW8xm84TJZPrTZDI9MxqNPgiGYZ5lZWU9zczMnDAYDC16vV5LEEQq8bLFcdyHFovFybKsKzs7G0GYzWYcJpMJGY1GHAzD4MjKykKZmZk49Hr9vsFgeEhR1INbN87z/H2O456wLOu1WCyIZVkUK4DBYMCh1+u9NE0/Zhjm/Vsxz3FcicViOeE4DoH5JAAgnU4H8Q9N00WqGSdJ8lWe53+0Wq0IzKsAgGiahvgB/ldSzdvt9ntWq3WK53l0CwBIq9X+RpLkvWSOPDZ/iwCIoqjZtLS01xIGgLIRBAGbhwDjklkIMJ8IgE6nQxkZGThCAZ5fe5yo+S/BfCgAjHhPTw+amZlB/f39KDc3F5sF0xKAZD7UeDgAGBUEAfX29qKpqSnU1taGjYcBII1GUxiX+by8vPcEQTgOBwCD29vbSNLl5SUaGRnBpSUZLioqQpWVlai+vh5HRUUFKigoCJYLZGx0dBR5vd7g31lbW4OyeQEgPT39hCTJ2KdYURSf2Gw2FA4A4ff7UbgODw/R+vo6BpKTx+PBRo+Pj1+4d3V1FREArlEU9X1M5nmef2Cz2byRAHJycpBaouQBvCRJfhTL6DtFUUSRAOAljjbK8er8/BzKRQ4A3oWHisw7HI5UURT35QDgHdjY2Eg6wPLycrQMAIALNo03AtjtdhrMRwKA0W9tbUWBQCDpAIFAANXV1WHzkQAgOyRJUkrKp0UOAKbQ/f19pJb29vaw6SgAXyvJwC+RAGCabG5uRmqruro6aD4cQKPRjCvJwNNIAFA+Y2NjqgMMDQ1hwzIA60oycBIJAMpnYWFBdYDZ2VlsVgbgWEkGvJEAYPVcWVlRHWBxcTEawJUSALdcBubn51UHmJ6ejgbwr5IS+kvuHRgfH1cdYHh4WPYdIElyVwnA73KzUGdnp+oAjY2N0WahZSUA43LrAGyd3W63aubdbjde6aOsA2NKAOqiLWSQYrU0ODgYdSHTaDTVNwKIoviJHIDUTsK2Odna3NwMNjpRAD6OazMnmZf2Q1BKS0tLSd3IcRwXsSMLAdgjCCKFUCKbzdYqAYBp6LBqamqCTTwE1KrD4UBbW1txG9/Z2UEdHR1B4xF64lCAm/dBoSdvoiheAgCM/MDAAO7CoHRqa2vxoiY199D7lpSU4GcmJyfR6emprGG4B89AL11YWIiNSicS4acSYQBXNE1/QMQiURS/k0oIRryhoSHYEpaWlv4vGwACjTxch9ZQTj6fD5WVleHe+KZjlYwQgPT09G9iMv88C28LguAKXcicTic6OjrCWwooMciEBACZgFX0Js3NzWGzMQD8TZLkO0Q8EgThi0j9wMHBAYaA+i0uLsbR1dWFLi4ubgQ4OzvDBmMAyIvLfEgmHoV2ZO3t7bh7glhdXUW7u7vI5XLhXaQSwfeUAlAU5SSSoBRBEH6SemIol+7u7oRWZIUAPyftR5D8/Pw3eJ6fkNYDgIDPTU1NqK+vD5+uQbemtFdWADDOMMzrRJKVYrVaO0MPd0PPReHYMBkAWq32W1V/frJarZ9zHOcKP51OAsC+Vqv9jLgN5ebmvsVxXD/LsleJAuh0ukudTveIYZg3idsWwzDvsiz7ldls3q2qqkJKVV5eDuVyoNfrOw0Gw33iZQshlHp0dPTp6elpg8fj+dXn861fX18f+P1+DwR89vl8f8A9eAaehe8Qd7rTnYhE9R+kV7M+FoRFRQAAAABJRU5ErkJggg=="
                   alt="github"
                 />
-              </div>
-              <p class="font-semibold text-gray-700">Git/GitHub</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">
-            Featured Projects
-          </h2>
-          <p class="text-xl text-gray-600">
-            A showcase of my recent work and personal projects
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="relative">
+              </a>
               <a
-                href="https://mykelsown.github.io/Skin-By-Wura/"
-                target="_blank"
-                ><img
-                  src="./assets/imgs/skin-by-wura.png"
-                  alt="E-commerce Platform"
-                  class="w-full h-48 object-cover cursor-pointer"
-              /></a>
-              <div
-                class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-sm font-semibold"
+                href="mailto:mykelsamuel512@gmail.com"
+                class="text-gray-400 hover:text-white transition-colors md:text-2xl"
               >
-                Featured
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
-                <a
-                  href="https://mykelsown.github.io/Skin-By-Wura/"
-                  target="_blank"
-                  >E-commerce Platform</a
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 48 48"
                 >
-              </h3>
-              <p class="text-gray-600 mb-4">
-                A modern e-commerce solution with React, featuring product
-                catalog, shopping cart, and payment integration.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
-                  >React</span
-                >
-                <span
-                  class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
-                  >Node.js</span
-                >
-                <span
-                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm"
-                  >MongoDB</span
-                >
-              </div>
-              <div class="flex gap-4">
-                <a
-                  href="#"
-                  class="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  <i class="fab fa-github mr-1"></i>Code
-                </a>
-                <a
-                  href="#"
-                  class="text-green-600 hover:text-green-800 font-semibold"
-                >
-                  <i class="fas fa-external-link-alt mr-1"></i>Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <a href="https://climateeguard.netlify.app/" target="_blank">
-              <img
-                src="./assets/imgs/climate-guard.png"
-                alt="Task Management App"
-                class="w-full h-48 object-cover cursor-pointer"
-              />
-            </a>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
-                <a href="https://climateeguard.netlify.app/" target="_blank"
-                  >Task Management App</a
-                >
-              </h3>
-              <p class="text-gray-600 mb-4">
-                A productivity app with drag-and-drop functionality, real-time
-                updates, and team collaboration features.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm"
-                  >Vue.js</span
-                >
-                <span
-                  class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm"
-                  >Firebase</span
-                >
-                <span
-                  class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm"
-                  >Tailwind</span
-                >
-              </div>
-              <div class="flex gap-4">
-                <a
-                  href="#"
-                  class="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  <i class="fab fa-github mr-1"></i>Code
-                </a>
-                <a
-                  href="#"
-                  class="text-green-600 hover:text-green-800 font-semibold"
-                >
-                  <i class="fas fa-external-link-alt mr-1"></i>Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <a
-              href="https://mykelsown.github.io/forex-risk-reward-calculator/"
-              target="_blank"
-            >
-              <img
-                src="./assets/imgs/forex-calculator.png"
-                alt="Weather Dashboard"
-                class="w-full h-48 object-cover cursor-pointer"
-              />
-            </a>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2 cursor-pointer">
-                <a
-                  href="https://mykelsown.github.io/forex-risk-reward-calculator/"
-                  target="_blank"
-                >
-                  Weather Dashboard
-                </a>
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Interactive weather application with location-based forecasts,
-                charts, and responsive design.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm"
-                  >JavaScript</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
-                  >Chart.js</span
-                >
-                <span
-                  class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
-                  >API</span
-                >
-              </div>
-              <div class="flex gap-4">
-                <a
-                  href="#"
-                  class="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  <i class="fab fa-github mr-1"></i>Code
-                </a>
-                <a
-                  href="#"
-                  class="text-green-600 hover:text-green-800 font-semibold"
-                >
-                  <i class="fas fa-external-link-alt mr-1"></i>Demo
-                </a>
-              </div>
+                  <path
+                    fill="#4caf50"
+                    d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"
+                  ></path>
+                  <path
+                    fill="#1e88e5"
+                    d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"
+                  ></path>
+                  <polygon
+                    fill="#e53935"
+                    points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"
+                  ></polygon>
+                  <path
+                    fill="#c62828"
+                    d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"
+                  ></path>
+                  <path
+                    fill="#fbc02d"
+                    d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
-
-        <div class="text-center mt-12" data-aos="fade-up">
-          <a
-            href="https://github.com/Mykelsown"
-            class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors md:text-2xl"
-          >
-            View All Projects
-            <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience & Education Section -->
-    <section id="experience" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">
-            Experience & Education
-          </h2>
-          <p class="text-xl text-gray-600">
-            My professional journey and academic background
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Experience -->
-          <div data-aos="fade-right">
-            <h3 class="text-2xl font-bold text-gray-800 mb-8 flex items-center">
-              <i class="fas fa-briefcase text-blue-600 mr-3"></i>
-              Experience
-            </h3>
-            <div class="space-y-8">
-              <div class="relative pl-8 border-l-2 border-blue-200">
-                <div
-                  class="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"
-                ></div>
-                <div class="bg-gray-50 p-6 rounded-lg">
-                  <h4 class="text-lg font-semibold text-gray-800">
-                    Front-End Web Developer
-                  </h4>
-                  <p class="text-blue-600 font-medium mb-2">
-                    Freelance • 2023 - Present
-                  </p>
-                  <p class="text-gray-600">
-                    Developed responsive web applications using modern
-                    JavaScript frameworks. Collaborated with clients to deliver
-                    pixel-perfect designs and optimal user experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div data-aos="fade-left">
-            <h3 class="text-2xl font-bold text-gray-800 mb-8 flex items-center">
-              <i class="fas fa-graduation-cap text-green-600 mr-3"></i>
-              Education
-            </h3>
-            <div class="space-y-8">
-              <div class="relative pl-8 border-l-2 border-green-200">
-                <div
-                  class="absolute -left-2 top-0 w-4 h-4 bg-green-600 rounded-full"
-                ></div>
-                <div class="bg-gray-50 p-6 rounded-lg">
-                  <h4 class="text-lg font-semibold text-gray-800">
-                    National Diploma in Mechatronics Engineering
-                  </h4>
-                  <p class="text-green-600 font-medium mb-2">
-                    Lagos State Polytechnic (LASPOTECH) • 2020 - 2022
-                  </p>
-                  <p class="text-gray-600">
-                    Gained strong analytical and problem-solving skills through
-                    engineering coursework. Developed proficiency in
-                    programming, automation, and system design.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl font-bold mb-4">Let's Work Together</h2>
-          <p class="text-xl text-gray-300">
-            Ready to bring your ideas to life? Get in touch!
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Contact Form -->
-          <div data-aos="fade-right">
-            <form class="space-y-6">
-              <div>
-                <label
-                  for="name"
-                  class="block text-sm font-medium text-gray-300 mb-2"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
-                />
-              </div>
-              <div>
-                <label
-                  for="email"
-                  class="block text-sm font-medium text-gray-300 mb-2"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
-                />
-              </div>
-              <div>
-                <label
-                  for="message"
-                  class="block text-sm font-medium text-gray-300 mb-2"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors md:text-2xl"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info -->
-          <div data-aos="fade-left">
-            <div class="space-y-8">
-              <div class="flex items-center">
-                <div
-                  class="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeElEQVR4nO2Zu2tUQRSHP18IahMiusbEWKS7EHzg35AqgkUIspCgSDAptVAbOwsRQYigjdgvefjCyNqIoOLbzqQKFopo1Gw6GyMD58Iwe+7dm917NxOYD06xO7Mz5zfnzpxzZyEQCAQCgXzZBBwHrgEVz+wWMARsbSRiH/AGWPXcPgH7k0RsBz5Lx5/AdWAcGPPExoEbwG/x8SOwSxNyXjosAl34SxfwRXy9qHV4JY2j+M8Z8fWt1vhNGvvxn37x9bvW+EMaD+E/kfhqfK5jURqfAd34Swm4nyakYh1vf4BT+EcZ+GX5qQo5DPx1zuvHnkSnBNxT8okqxDAgOWTVo+iUnShkEmLYA0wpP3oC9LTPf/YC0w0yvCpkB7Db+nwSWFqn6JSVKNSAy8BpKyGqQl4CK0Cn82zOKitR1N4pJeyFKnDA6jeYJiTOI+aMdhlS9s6y1ECmWs4DbY5awhxRs0LSntlW907SuFUnCrkJsVduKafoaGPVMoyVi5B4FWdaiE7S76spUShESCvRaTYKhQqJ3w8eKqs7Bxyx+pli9EFCFHrXOGdUhJCYUckzrqMrsuLa982eelGRQtLyjmvPgb4W5omKFhJzAngB/HMEvAOGc8g9UbuExHQAx+SNbmeO40btFrIWTGl0G3iq2F3n+sdrIVcb7Ks7G0WIWfU0IY82ipBzDYRcySokvg6yk1g72Swn2gXFRoBtVt+j4qvxuY7X0miSlO+cFV/NpWIdl6TxqycXDkn0WE+PiVYd5kJ4QTqYUuMmMOHB5fWY2IT4tCw+zqflpoPAhwwlxnrb+yyF5hYpMSY9+GOn4tik+GYOhkAgEAgEyIv/NEvbsULxqh4AAAAASUVORK5CYII="
-                    alt="new-post"
-                    class="w-9"
-                  />
-                </div>
-                <div>
-                  <h4 class="text-lg font-semibold">Email</h4>
-                  <p class="text-gray-300">mykelsamuel512@gmail.com</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="bg-green-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADS0lEQVR4nO2ZS0hUURjHf6ZZGJWUVqYWGbQSMlpkRYtE2oRBRAVFmGIYZLWM1tKqwih6CLWpXUXagx4LSVr0EiwhIm3Rg4qg1J5oz4lD/wuHYebOXBnvnIH5wd3M/c7c79x7vv/5vu9AlixpZR3QA4wCfcByMox84DgQibqGgVIyhOlAlxwfAVqAIuCyfrtOBjAHeCyH3wJLo+591L1GHGYa0CtHnwLzY9hs1f1PwDwcZBJwR04+AWb62Ha4vMQOyLlXQFkCW7PEBmVfj2MMybHVSdpvk70ZV4JDjMqxwgBjrmmMWWrO8FxOVQYYU6agN+M24wgdcsioUhB2aFw/jtAih84GHFekcb+BHBxgIfAX+AJMDTBuuyZi8jFn6JJTO5O0nwy8dFGGN1nrPS8J+/2yfwRMwCFylZoY55oT2M4CPsu2FgfZIOfeAQU+du2yMxmxk+QAD+TkQZ/Y+CqbJhxmCfAT+AOsimOzxyq0FuAwrVbgF8T5cldl8zDBMkx7qdsnR03JG4tCSxw6JRZOUqVS1zja4LORfpBNuyu7eywarNp9WUyL/50VL/jbcJijliTH66DUWF/vMI4yEbgtJ+/6BHad1C6iitNJioEXcvKGxCAWG63JtLkaM4uA93LyvI9K1VnL7JSrarZYm6Bx8rTPG6+xBKAzznLMlZiYpNNsvgNKXENjBfAticCutqS5J6pPVmvtU9HXRWA2IbEG+GFNJt6XqbA2zSGVxl5GEFHcmVqmSPe8jNp0NLeENZn11mTO+MSCyQCuRL114/A+JaA25RITz65DfbRQvoy3zC74qJn5YrsVNydVz/jRaMXioPpo485K66E3EySQpjWbLKVW7yyiJTmXEPIyT5rvpbj7WG91Qod9UqWU7jNeM+JNih9YYomEketQMoBuPXDUJ2seCzP0v98JMTc7Zq3tEykqvPZa+V6oNFjN8QGJwliptqR+LWmgytrBTRpyCJgS8D8qLCE5QhrJVw/gl1XXNCfZBCwGnmncLS3btGMOVu9bsdOv9my8XnO5ld70BuxJjzs5agJ6bzmixvk5HWlU6njcZM+vLbkNLYkMSp4Oh7p0ChCJc3VrYhmBCeZdwCWp24iy39aAKU2WLKSQf3jSBy3qRwNwAAAAAElFTkSuQmCC"
-                    alt="phone--v1"
-                    class="w-9"
-                  />
-                </div>
-                <div>
-                  <h4 class="text-lg font-semibold">Phone</h4>
-                  <p class="text-gray-300">09132392431</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADXUlEQVR4nO2ZW0tVQRTHf3rskB6LTEgss8tLHbtJ9AkqypeweuhTlBhKZBB9gQTFk0VgFyi6UIldpLR67CECUwqiJ7PooS+QdgpjYG0YFnP20bNnHy32Hxbonpk1859Zsy5zIEGCBAkS/GeoApqBrIj5O8U/gBTQBuSAKWAOmFcyJ20DwOHlRqwW6Aa+ORZeTMyYLiCz1CSOAV+LLPaXSFifGaB9KQikgSsFFj0OnARagQagQqRBvp0CXgJ5x/hB0V02UxpXCzCLugw0LkJPo2yGJjRWDlNLO0hMANsi6NwOTCqdL+I+GW1ODz3tnjnlR0r3JWK82JpEpUhLia60SsYGeobVHN4dQK3yThPWSRyXb9+Bs8BKa5whVydiE60GemSMGXvUmmfSmucLUOOTSLe62PadOKd2cRoYAj4Df6zvv+XbkPSxx5gNCJBVDuC0LxIpFeyMdyKESCliEzG4qmKMlwygTcUJ7WJPeCBidNhYr07loA8iOUuhcb0avR6IXHTofWW19/sgMmUpNBHbRrPYflQiRsdGpbvDan8flUSVymJNimHjjAcSgRiHYmOv1TYb9Z40qcnWqfZrHokYb2ajQbVviEKkRV10E7RsPPNIxOiyUamy5qwvInOSxdq455HIHaW7Qpl11qdprVHtFzwSOa901/k0rZTald2qfZ9HItqRtFptP30ExTD3azDqgcRTh94OldtFxoClcMTRXi85VKkkPgFrHXqfWH36fBA5ZCnMSxB0kbmtksRiYvreKkBiswq0B3wQSakUvlc8ykfgLbDJ6rtVstUbIc9B14FOYEvInH0qadRuv2R0qcXsEgLTYlarVf+gRnGJKdDCsEfFD0PaGzKyM4Hyd1IcBVXjGzEH5LTuhhC5GTJPtegO+k77LqyQKs5e0LCY3Wv539j0B+BHkbthvFyhvG5E9T1CTBhUE90XW3+8iIs+WuDEH6h+pnyIDWl5qplXKfYOYJVc9voisUUT2el4DnoOrCBmZBxk8vJ8E9QUCyHSLCecd5DIUCakZeGu2DCmHIOWGak0XaaYK8dJuNAuTzalRnXbO8V2sReKGgmCxV7lC51OZxwuNgoq5bWjXxzArGPhs5IAmsi932fEjhMpqWeCn96altsvVAkSJEiQgKj4CxZ8d6JZl0sKAAAAAElFTkSuQmCC"
-                    alt="github"
-                    class="w-10"
-                  />
-                </div>
-                <div>
-                  <h4 class="text-lg font-semibold">GitHub</h4>
-                  <a
-                    href="https://github.com/Mykelsown"
-                    class="text-blue-400 hover:text-blue-300"
-                    >mykelsown.github.io</a
-                  >
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="bg-cyan-600 w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFM0lEQVR4nO2a2W9VVRTGf61BRaW0Di++iLTw5IDDg1ERp2g0mjhQVBK1ElBwqmjC4JM4NTxo9B+oGJ8cMCZiEHGWiAoiDikyqC8OlRrEgoJYe8xKvk1WNueec+695xZq+JKT9J717XXOOntYa3+7cBiFMV7XqEE7MAdYBnwK7ACS6Nohm3Fmq80hgTZgPvBFyksXvTYAD8jXiOMEYCkw6F7I/h5yv18ELnS/pwIvud9DUfs/gJ6RCqgJmAUMuBd4E7gZWKzffwG3uTaBF3A7sEf3rM0twCrH2w506VkNwfHAa+6BHwIXyHYx8A8wDEyP2sWBGDrFtTbTdM967yPHf7URvTMZ+N4NIfuqAWOATbI9ktI2LRDDo7q/ST4CrDd2ybYN6CgriLOAX+V4fYrjB2X7FjiyikCMu1k28+ExCfhcNnv2lDJ6IgTxLnBcZB+rMW32qyr4qBSI4Wo3L8yXxzjgfRdMzT3T5oZTH3BMCudO2b/M8JMVCGqbKK/EONYN261AK1WiKZrYYejcEzn7RLZ5dQQyT/a17t543Q9DL1zLq13NZrmJvRD4zjnbp+VyseO01BFIi5vcC4A3gL2unfXEQy7n+IUmN9kNRF/6CC2rqxSI/0q7df9ZYC5wJXAuMFG9F3ituneOOHcBTwMrXSCJS5artUzbs9FoCPOl0LK8VA0+AJor5JMuN8nLvAZUr52Y8txml2esAshEm+vCkOzSYON0p3jnAddoWPTqS67XQvG7e8mdumfL6tsqHBcB1wHnO05TxnOnunIms1dCTliTE/Ak8X4kH3lzJOBn8fIq4o/F684ihSr2hhxnneK9XmIgK8SbXvDZ1uupaBfhT+DoHGc94i4pMZDHxHsihzdWhalxJ6QR5shoXyYPy8WdUWIgVkEb7+UC3JXiWpo4AM/LeF8BR6F0uKTEQC51pVAeusV9Ls34mYxWkufhG3FPKzGQM8T7qgD38pRqYD/CHvvUKlaYk0sMxHwl8p2HMJ9/S0s2w8qofm9QCX/LUVrZXmsg5mtYvvPqqTF613/jpN3SgCw9Ute4/2UgzTUOraNKHFrmK1HlS61Da7RN9omVJjtSAIsuv1+Le3qJgZxZYLcZcJm4VncdgGWjMCH2phlny2g7tDy8Iu5Nh2KJ0u6KxljRiPGkuKZNHcyi8ZRKpA0i3FiwlF5RYiA2Eqop49dlkeaLZHVXFjrE+6nEQH4Rz1akLKwV7/4sUpu2kYm02CJbXdumXi9V5QVNVtug/eA4lba6tj2+VtvlwMkqTy5yvFyNq8eJ1Gniw0nau3hFvqxru4QNEzhiNGsLXmQe7e+VoJCYBIMkGdtEvROdgSSScmwVeUoBWol9thJrJTnoCslBz0hK2h353Ae8FclB98rWX43i2KVGgxLHtrqH7NUkX+ACqVegG1SJtEjnLaEESiQOLnTqzq1UgSadT8SS6dzopRslmbYCd+uZ/h2K5JjUIbbNidgmKFcSsTfWEcjGHBG7T/Yt9ZwOd7hjhffikrnBxwotrhTqL+MEeIocJUqYJs6liXqb6zjosfzlMdlpbP0qKEtBhxtmu7QYpB29LakikFCS9EV7oDucqL2lEWfxrU7PSrSmh6Q5zR2GdhYIZIY7DLUkF3TdNdHEbth/TDTpfCLMm0Tr/UzgYf3eE/VYHEhXdDw9U8J34PVXu8TWgzZVAKGcSfT3UPRF438YCOV/pX8YeLyW47WyAuqWoFxrWbJOPg5KAGmYoI1OrxJlWi02oMTXK27F/cShiJacEuYwcPgPknvUyL7T8dYAAAAASUVORK5CYII="
-                    alt="globe--v1"
-                    class="w-9"
-                  />
-                </div>
-                <div>
-                  <h4 class="text-lg font-semibold">Portfolio</h4>
-                  <a
-                    href="https://github.com/Mykelsown"
-                    class="text-blue-400 hover:text-blue-300"
-                    >mykelsown.github.io</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <p class="text-gray-400">
-            &copy; 2024 Micheal Samuel. All rights reserved.
-          </p>
-          <div class="flex justify-center space-x-6 mt-4">
-            <a
-              href="https://github.com/Mykelsown"
-              class="text-gray-400 hover:text-white transition-colors md:text-2xl"
-            >
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFfUlEQVR4nO2Z20sjVxzHR0tLu/QG7fZp2z9ACoVOHDNJdJI4mcxkotgWr9UnFQQv9cFL8RbxwY24also26UPImjFiu2DVBHRBx/ESx+sbkFQtGIsqHW90EQTSU75HXZCms3EyWXcF7/wgzAz0e/n/H5zzvmdEMSd7nSnhJWfn/9KdnY2bTabW8xm84TJZPrTZDI9MxqNPgiGYZ5lZWU9zczMnDAYDC16vV5LEEQq8bLFcdyHFovFybKsKzs7G0GYzWYcJpMJGY1GHAzD4MjKykKZmZk49Hr9vsFgeEhR1INbN87z/H2O456wLOu1WCyIZVkUK4DBYMCh1+u9NE0/Zhjm/Vsxz3FcicViOeE4DoH5JAAgnU4H8Q9N00WqGSdJ8lWe53+0Wq0IzKsAgGiahvgB/ldSzdvt9ntWq3WK53l0CwBIq9X+RpLkvWSOPDZ/iwCIoqjZtLS01xIGgLIRBAGbhwDjklkIMJ8IgE6nQxkZGThCAZ5fe5yo+S/BfCgAjHhPTw+amZlB/f39KDc3F5sF0xKAZD7UeDgAGBUEAfX29qKpqSnU1taGjYcBII1GUxiX+by8vPcEQTgOBwCD29vbSNLl5SUaGRnBpSUZLioqQpWVlai+vh5HRUUFKigoCJYLZGx0dBR5vd7g31lbW4OyeQEgPT39hCTJ2KdYURSf2Gw2FA4A4ff7UbgODw/R+vo6BpKTx+PBRo+Pj1+4d3V1FREArlEU9X1M5nmef2Cz2byRAHJycpBaouQBvCRJfhTL6DtFUUSRAOAljjbK8er8/BzKRQ4A3oWHisw7HI5UURT35QDgHdjY2Eg6wPLycrQMAIALNo03AtjtdhrMRwKA0W9tbUWBQCDpAIFAANXV1WHzkQAgOyRJUkrKp0UOAKbQ/f19pJb29vaw6SgAXyvJwC+RAGCabG5uRmqruro6aD4cQKPRjCvJwNNIAFA+Y2NjqgMMDQ1hwzIA60oycBIJAMpnYWFBdYDZ2VlsVgbgWEkGvJEAYPVcWVlRHWBxcTEawJUSALdcBubn51UHmJ6ejgbwr5IS+kvuHRgfH1cdYHh4WPYdIElyVwnA73KzUGdnp+oAjY2N0WahZSUA43LrAGyd3W63aubdbjde6aOsA2NKAOqiLWSQYrU0ODgYdSHTaDTVNwKIoviJHIDUTsK2Odna3NwMNjpRAD6OazMnmZf2Q1BKS0tLSd3IcRwXsSMLAdgjCCKFUCKbzdYqAYBp6LBqamqCTTwE1KrD4UBbW1txG9/Z2UEdHR1B4xF64lCAm/dBoSdvoiheAgCM/MDAAO7CoHRqa2vxoiY199D7lpSU4GcmJyfR6emprGG4B89AL11YWIiNSicS4acSYQBXNE1/QMQiURS/k0oIRryhoSHYEpaWlv4vGwACjTxch9ZQTj6fD5WVleHe+KZjlYwQgPT09G9iMv88C28LguAKXcicTic6OjrCWwooMciEBACZgFX0Js3NzWGzMQD8TZLkO0Q8EgThi0j9wMHBAYaA+i0uLsbR1dWFLi4ubgQ4OzvDBmMAyIvLfEgmHoV2ZO3t7bh7glhdXUW7u7vI5XLhXaQSwfeUAlAU5SSSoBRBEH6SemIol+7u7oRWZIUAPyftR5D8/Pw3eJ6fkNYDgIDPTU1NqK+vD5+uQbemtFdWADDOMMzrRJKVYrVaO0MPd0PPReHYMBkAWq32W1V/frJarZ9zHOcKP51OAsC+Vqv9jLgN5ebmvsVxXD/LsleJAuh0ukudTveIYZg3idsWwzDvsiz7ldls3q2qqkJKVV5eDuVyoNfrOw0Gw33iZQshlHp0dPTp6elpg8fj+dXn861fX18f+P1+DwR89vl8f8A9eAaehe8Qd7rTnYhE9R+kV7M+FoRFRQAAAABJRU5ErkJggg=="
-                alt="github"
-              />
-            </a>
-            <a
-              href="mailto:mykelsamuel512@gmail.com"
-              class="text-gray-400 hover:text-white transition-colors md:text-2xl"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="#4caf50"
-                  d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"
-                ></path>
-                <path
-                  fill="#1e88e5"
-                  d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"
-                ></path>
-                <polygon
-                  fill="#e53935"
-                  points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"
-                ></polygon>
-                <path
-                  fill="#c62828"
-                  d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"
-                ></path>
-                <path
-                  fill="#fbc02d"
-                  d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
