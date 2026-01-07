@@ -65,6 +65,8 @@ npm run build
 
 This generates an optimized production build in the dist/ directory.
 
+LIVE DEMO: https://mykelsown.netlify.app
+
 🌍 Deployment
 
 The project is deployed on Netlify.
