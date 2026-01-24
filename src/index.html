@@ -924,55 +924,70 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Contact Form -->
             <div data-aos="fade-right">
-              <form data-netlify="true" name="contact" class="space-y-6">
-                <!-- Required hidden input -->
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                class="space-y-6"
+              >
+                <!-- REQUIRED -->
                 <input type="hidden" name="form-name" value="contact" />
 
-                <!-- Honeypot (spam protection) -->
+                <!-- Honeypot -->
                 <input type="hidden" name="bot-field" />
 
                 <div>
                   <label
                     for="name"
                     class="block text-sm font-medium text-gray-300 mb-2"
-                    >Name</label
                   >
+                    Name
+                  </label>
                   <input
                     type="text"
-                    name="names"
+                    name="name"
                     id="name"
-                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white"
                   />
                 </div>
+
                 <div>
                   <label
                     for="email"
                     class="block text-sm font-medium text-gray-300 mb-2"
-                    >Email</label
                   >
+                    Email
+                  </label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white"
                   />
                 </div>
+
                 <div>
                   <label
                     for="message"
                     class="block text-sm font-medium text-gray-300 mb-2"
-                    >Message</label
                   >
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     name="message"
                     rows="5"
-                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white"
                   ></textarea>
                 </div>
+
                 <button
                   type="submit"
-                  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors md:text-2xl"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold"
                 >
                   Send Message
                 </button>
